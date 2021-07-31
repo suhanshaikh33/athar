@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+h1{
+flex: 1;
+font-family: 'Secular One', sans-serif;
+font-size: 40px;
+}
+.image-overlay{
+    background-color: black;
+}
+.navbar{
+    display: flex;
+    flex: 1;
+    width: 90%;
+    margin-left: 50px;
+    margin-right: 50px;
+    color: white;
+}
+.navbar ul{
+    width: 50%;
+    text-align: right;
+    margin-right: 50px;
+    padding-left: 0;
+    padding-right: 50px;
+}
+.navbar li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+    font-family: 'Quicksand', sans-serif;
+}
+nav img{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    opacity: 0.3;
+}
+.overlay{
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    z-index: -2;
+    position: absolute;
+}
+nav{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+.navbar{
+    overflow: hidden;
+}
+.AboutCompany{
+    height: 50vh;
+}
+
+.centerContainer{
+    margin-top: 50vh;
+    transform:translateY(-50%) ;
+}
+.centerContainer h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+aboutcompany_info{
+    text-align: center;
+    width: 50%;
+    margin: auto ;
+    margin-bottom: 20px;
+}
+.paracontain{
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+}
+.flexcard{
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+
+}
+.card{
+    flex-wrap: nowrap;
+    flex: 1;
+    
+    height: 30vh;
+    margin-right: 10px;
+}
+.column{
+    display: flex;
+    
+}
+
+.column1{
+    width: 30%;
+    overflow: hidden;
+    
+}
+.column1 img{
+    width: 100%;
+}
+.column1 div{
+    width: 1px;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 10px;
+    background-color: black
+}
+.column2
+{
+    margin-left: 5px;
+    margin-top: 10px;
+}
+.column2 h3,p{
+    padding-bottom: 10px;
+}
+.column2 p:nth-child(2){
+    padding-bottom: 50px;
+}
+.client-section{
+    height: 70vh;
+    overflow: hidden;
+}
+.image-container{
+    height: 45%;
+    overflow: hidden;
+    text-align: center;
+    background-color: black;
+}
+.image-container img{
+    width: 100%;
+    height: 100%;
+    opacity: 50%;
+    object-fit: cover;
+}
+.image-container p{
+    position: relative;
+    z-index: 2;
+    font-size: 1.2rem;
+    top: -50%;
+    transform: translateY(-50%);
+    color: white;
+    width: 65%;
+    display: inline-block;
+    text-align: center;
+    line-height: 2em;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 300;
+}
+.customer-section{
+    height: 24.3%;
+    margin-top: 2.5%;
+    text-align: center;
+    
+}
+.customer-section h3{
+    text-align: left;
+}
+.customer-section img{
+    width: 60%;
+    object-fit: cover;
+}
+.customer-section p{
+display: inline;
+
+}
+.customer-section a{
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+
+/* footer styling */
+
+
+.footer{
+    background-color: #424242;
+    height: 33.33%;
+}
+.footer .row{
+    width: 60vw;
+    margin: auto auto;
+}
+
+.footer i{
+    /* width: 30px;
+    height: 20px; */
+    color: white;
+    text-align: center;
+    display: block;
+}
+.footer .row a{
+    display: inline;
+    color: white;
+    margin-left: 0;
+}
+.footer .row h3{
+    color: white;
+}
+.footer .row a:hover{
+color: white;
+}
+.row-p{
+    display: flex;
+
+}
+.fa-mobile-alt{
+
+    font-size: 22px;
+}
+.fa-envelope{
+    padding-left: 2px;
+    font-size: 20px;
+}
+.div-margin div:nth-child(1){
+    width: 50px;
+}
+
+
+.div-margin a{
+    margin-left: 15px;
+}
+.div-margin div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.gettouch h3{
+    margin-left: 50px;
+}
+
+ul{
+    width: 100%;
+}
+
+.row h3
+{
+    font-family: 'Quicksand', sans-serif;
+    margin-bottom: 10px;
+    font-weight: 800;
+}
+.gettouch a{
+    font-family: 'Quicksand', sans-serif;
+}
+footer{
+    background-color: #424242;
+    color: white;
+    padding-bottom: 50px;
+    padding-top: 80px;
+}
+footer ul{
+    padding-left: 0;
+}
+footer li{
+    list-style: none;
+    padding-bottom: 5px;
+    font-family: 'Quicksand', sans-serif;
+}
+footer .row{
+    width: 70%;
+    margin: auto auto;
+    margin-left: 20%;
+}
+footer .grid{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-family: 'Quicksand', sans-serif;
+}
+footer .grid p{
+    margin-bottom: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+footer .grid i{
+    margin-right: 15px;
+}
+footer #empty{
+    width: calc(31px - 2px);
+}
+footer a{
+    font-family: 'Quicksand', sans-serif;
+}
