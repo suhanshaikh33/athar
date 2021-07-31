@@ -290,7 +290,7 @@ footer a{
 @media (max-width:450px) and (min-width:0px)
 {
 .navbar h1{
-    font-size: 2px;
+    font-size: 1px;
 } 
 .navbar {
     display: block;
