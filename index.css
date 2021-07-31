@@ -37,6 +37,7 @@ nav img{
     width: 100%;
     height: 100vh;
     opacity: 0.3;
+    object-fit: cover;
 }
 .overlay{
     background-color: black;
@@ -283,4 +284,26 @@ footer #empty{
 }
 footer a{
     font-family: 'Quicksand', sans-serif;
+}
+
+
+@media (max-width:450px) and (min-width:0px)
+{
+.navbar h1{
+    font-size: 14px;
+} 
+.navbar {
+    display: block;
+    margin-left: 10px;
+}
+.navbar ul{
+    width: 100%;
+    padding-right: 0;
+    margin-right: 0;
+}
+.navbar li{
+    padding: 0;
+    display: block;
+    text-align: center;
+}
 }
