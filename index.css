@@ -368,7 +368,7 @@ opacity: 10%;
     width: 100%;
     font-size: 19px;
     text-align: center;
-    margin-bottom: 10px;`
+    margin-bottom: 10px;
     text-align: center;
     margin: 0 auto;
     margin-bottom: 10px;
@@ -409,15 +409,16 @@ opacity: 10%;
     margin-right: 10px;
 }
 .column2{
+    display: flex
     
-    font-family: ;
 }
 .border-left{
-    width: 1px;
-    display: inline-block;
-    height: 10px;
+    width: 10px;
+    display: block;
+    height: 100px;
     background-color: black;
     opacity: 10%;
+    margin-right: 10px;
 }
 .column2 p{
     
