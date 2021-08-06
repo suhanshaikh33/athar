@@ -8,72 +8,109 @@ font-family: 'Secular One', sans-serif;
 font-size: 40px;
 }
 
-.carousel{
-    height: 100%;
-}
-.carousel img{
-    
-}
-.carousel-inner
+/* CSS new */
+section
 {
-    height: 100%;
-}
-.carousel-item{
-    height: 100%;
-}
-.navbar{
-    position: absolute;
-    z-index: 1;
-    display: flex;
-    flex: 1;
-    width: 90%;
-    margin-left: 50px;
-    margin-right: 50px;
-    color: white;
-    top: 0;
-}
-.navbar ul{
-    width: 50%;
-    text-align: right;
-    margin-right: 50px;
-    padding-left: 0;
-    padding-right: 50px;
-}
-.navbar li{
-    list-style: none;
-    display: inline-block;
-    padding: 10px;
-    font-family: 'Quicksand', sans-serif;
-}
-nav img{
-    
-    z-index: -1;
-    width: 100%;
-    height: 100vh;
-    
-    object-fit: cover;
-}
-.overlay{
-    position: static;
-    width: 100%;
-    height: 100vh;
-    z-index: -2;
-    
-}
-.overlay-black
-{
-position: absolute;
-height: 100%;
-width: 100%;
-background-color: black;
-opacity: 70%;
-z-index: 1;
+ height: 100vh;   
 }
 nav{
-    height: 100vh;
     width: 100%;
+    height: 10vh;
+    position: absolute;
+    z-index:2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgba(45, 51, 45, 0.422);
+}
+nav > *
+{
+    flex: 1;
+}
+    
+
+nav ul li{
+    list-style: none;
+    display: inline;
+    color: white;
+}
+.div1{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    opacity: 0;
+    overflow: hidden;
+    text-align: ;
+}
+.div1 p{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+.div2::before{
+    content: "";
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(27, 27, 27, 0.3);
+}
+.div1::before{
+    content: "";
+    position: absolute;
+    z-index: 11;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(27, 27, 27, 0.75);
+}
+img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+.image-wrapper
+{
+    width: 100vw;
+    height: 100vh;
     overflow: hidden;
 }
+.div2{
+    width: 100%;
+    height: 100%;
+    display: block ;
+    position: absolute;
+    top: 0%;
+    overflow: hidden;
+}
+
+.none{
+   display: none; 
+}
+button{
+    width: 500px;
+}
+.ham-container{
+    display: none;
+}
+/* ANIMATION CLASSES */
+.appear
+{
+    display: block;
+    animation: fade-in 20s infinite forwards;
+ 
+}
+.disappear
+{
+    display: block;
+    opacity: 0;
+    animation: fade-in2 20s  infinite forwards; 
+}
+
 
 .AboutCompany{
     height: 100vh;
@@ -82,9 +119,7 @@ nav{
 .centerContainer{
     display: flex;
 }
-.centerContainer div{
-    
-}
+
 .centerContainer h2 {
     text-align: center;
     margin-bottom: 50px;
@@ -309,6 +344,16 @@ footer a{
 
 @media (max-width:450px) and (min-width:0px)
 {
+nav h1{
+    flex: 70%;
+    font-size: 22px;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+nav > :nth-child(2)
+{
+    flex: 30%;
+}
 .navbar h1{
     font-size: 1px;
 } 
@@ -337,24 +382,25 @@ footer a{
 }
 .about-wrapper
 {
-    width: 95%;
+    width: 98%;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    height: 70vh;
+    height: auto;
+    padding: 30px 0;
     font-size: 16px;
     display: flex;
     flex-flow: column;
-    justify-content: center;
     font-family: 'Quicksand', sans-serif;
 }
 
 .about-wrapper p{
     padding-bottom: 0;
     font-size: 16px;
-    text-align: justify;
-    width: 90%;
+    text-align: center;
+    width: 100%;
     margin: 0 auto;
+    line-height: 1.5em;
 }
 .about-wrapper h2
 {
@@ -370,7 +416,7 @@ footer a{
     background-color: black;
     margin-left: 50%;
     transform: translateX(-50%);
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     opacity: 30%;
 }
 .underlinecard
@@ -553,16 +599,121 @@ footer .grid{
     padding-bottom:10px ;
 }
 
+@media (min-width: 0px) and (max-width : 600px)
+{
+    nav{
+        height: auto;
+    }
+    nav ul{
+        padding-left: 0;
+        font-family: '';
+        font-weight: 300;
+        font-family: 'Quicksand', sans-serif;
+    }
+    nav ul li{
+        display: block;
+        text-align: center;
+        
+    }
+    
+    nav :nth-child(3){
+        flex: 100%;
+
+    }
+    nav li{
+        padding-bottom: 10px;
+        font-size: 20px;
+    }
+    .ham-container {
+        background: ;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        height: 10vh;
+        width: 50vw;
+      
+      }
+      .menu-btn {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 80px;
+        cursor: pointer;
+        transition: all .5s ease-in-out;
+        /* border: 3px solid #fff; */
+      }
+      .menu-btn__burger {
+        width: 50px;
+        height: 6px;
+        background: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(255,101,47,.2);
+        transition: all .5s ease-in-out;
+      }
+      .menu-btn__burger::before,
+      .menu-btn__burger::after {
+        content: '';
+        position: absolute;
+        width: 50px;
+        height: 6px;
+        background: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(255,101,47,.2);
+        transition: all .5s ease-in-out;
+      }
+      .menu-btn__burger::before {
+        transform: translateY(-16px);
+      }
+      .menu-btn__burger::after {
+        transform: translateY(16px);
+      }
+      /* ANIMATION */
+      .menu-btn.open .menu-btn__burger {
+        transform: translateX(-50px);
+        background: transparent;
+        box-shadow: none;
+      }
+      .menu-btn.open .menu-btn__burger::before {
+        transform: rotate(45deg) translate(35px, -35px);
+      }
+      .menu-btn.open .menu-btn__burger::after {
+        transform: rotate(-45deg) translate(35px, 35px);
+      }
+}
 
 
 
 
+}
+@keyframes fade-in 
+{
+    0%
+    {
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%
+    {
+        opacity: 1;
+    }
+    
+}
 
-
-
-
-
-
-
+@keyframes fade-in2{
+    0%
+    {
+        opacity: 0;
+    }
+    50%
+    {
+        opacity: 1;
+    }
+    100%{
+        opacity:0;
+    }
 
 }
