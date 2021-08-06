@@ -4,4 +4,5 @@ deployment:
     - export DEPLOYPATH=/home/athartec/public_html/
     - /bin/cp index.html $DEPLOYPATH
     - /bin/cp index.css $DEPLOYPATH
+    - /bin/cp index.js $DEPLOYPATH
     - /bin/cp -R images $DEPLOYPATH
